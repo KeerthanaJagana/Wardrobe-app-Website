@@ -125,7 +125,7 @@ export default function Features() {
   return (
     <section
       id="features"
-      className="py-24 sm:py-32 px-4 sm:px-6 lg:px-8 bg-white dark:bg-[#0a1a22]"
+      className="py-24 sm:py-32 px-4 sm:px-6 lg:px-8 bg-white"
       aria-labelledby="features-heading"
     >
       <div className="max-w-7xl mx-auto">
@@ -133,11 +133,11 @@ export default function Features() {
         <div className="text-center mb-16 sm:mb-20">
           <h2
             id="features-heading"
-            className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0a3d52] dark:text-[#e6f7ff] mb-4"
+            className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4"
           >
             Powerful Features
           </h2>
-          <p className="text-lg text-[#1a5a73] dark:text-[#b8e0f5] max-w-2xl mx-auto">
+          <p className="text-lg text-gray-800 max-w-2xl mx-auto">
             Everything you need to organize, plan, and style your perfect wardrobe.
           </p>
         </div>
@@ -147,21 +147,21 @@ export default function Features() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="group p-6 rounded-lg border border-[#89cff0]/30 dark:border-[#89cff0]/20 bg-[#f0f9fc] dark:bg-[#1a4a5c]/50 hover:border-[#89cff0] dark:hover:border-[#89cff0]/40 transition-colors duration-200 focus-within:ring-2 focus-within:ring-[#89cff0] dark:focus-within:ring-[#89cff0] focus-within:ring-offset-2"
+              className="group p-6 rounded-lg border border-gray-200 bg-white hover:border-gray-300 hover:shadow-md transition-all duration-200 focus-within:ring-2 focus-within:ring-gray-400 focus-within:ring-offset-2"
               tabIndex={0}
             >
               <div className="flex items-start space-x-4">
                 <div
-                  className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#89cff0] dark:bg-[#89cff0] text-[#0a3d52] dark:text-[#0a3d52] flex items-center justify-center group-hover:scale-110 transition-transform duration-200"
+                  className="flex-shrink-0 w-12 h-12 rounded-lg bg-gray-100 text-gray-900 flex items-center justify-center group-hover:scale-110 transition-transform duration-200"
                   aria-hidden="true"
                 >
                   {feature.icon}
                 </div>
                 <div className="flex-1 min-w-0">
-                  <h3 className="text-xl font-semibold text-[#0a3d52] dark:text-[#e6f7ff] mb-2">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">
                     {feature.title}
                   </h3>
-                  <p className="text-[#1a5a73] dark:text-[#b8e0f5] leading-relaxed">
+                  <p className="text-gray-800 leading-relaxed">
                     {feature.description}
                   </p>
                 </div>
