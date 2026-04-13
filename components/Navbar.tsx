@@ -3,9 +3,11 @@
 import { useState, useEffect } from "react";
 
 const links = [
+  { label: "Home", href: "/home" },
   { label: "Features", href: "#features" },
   { label: "Preview", href: "#preview" },
   { label: "How It Works", href: "#how-it-works" },
+  { label: "Dashboard", href: "/dashboard" },
 ];
 
 export default function Navbar() {
@@ -47,7 +49,7 @@ export default function Navbar() {
         {/* CTA */}
         <div className="hidden md:block">
           <a
-            href="#features"
+            href="/dashboard"
             className="px-5 py-2 text-base font-semibold text-white bg-[#9b5c7a] rounded-lg hover:bg-[#6b3050] transition-colors duration-200"
           >
             Get Started
