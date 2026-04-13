@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fdf6f0;
+  --foreground: #3b2a2a;
 }
 
 @theme inline {
@@ -10,13 +10,21 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* Soft feminine palette */
+  --color-blush-50:  #fdf6f0;
+  --color-blush-100: #fce8e0;
+  --color-blush-200: #f9d0c4;
+  --color-blush-300: #f4b0a0;
+  --color-blush-400: #ec8c7a;
+  --color-blush-500: #e06b58;
+  --color-rose-50:   #fff0f3;
+  --color-rose-100:  #ffe0e6;
+  --color-rose-200:  #ffc2cc;
+  --color-mauve-400: #c084a0;
+  --color-mauve-600: #9b5c7a;
+  --color-mauve-800: #6b3050;
+  --color-mauve-900: #4a1f38;
 }
 
 body {
