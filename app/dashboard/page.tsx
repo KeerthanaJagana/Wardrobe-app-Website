@@ -38,7 +38,7 @@ export default async function DashboardPage({
 
       <div className="flex flex-wrap gap-3">
         <FilterLink label="All" href="/dashboard" active={!params.categoryId && !params.season} />
-        {categories.map((cat) => (
+        {categories.map((cat: { id: string; name: string }) => (
           <FilterLink
             key={cat.id}
             label={cat.name}
