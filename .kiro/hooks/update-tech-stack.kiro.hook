@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "name": "Update Tech Stack Section",
+  "description": "Reminds the agent to update the TechStack component whenever new dependencies or technologies are introduced to the project",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "package.json"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Check if any new technologies, libraries, or dependencies have been added to the project that aren't already listed in components/TechStack.tsx. If so, update the TechStack component to include them with an appropriate icon, name, and description."
+  }
+}
