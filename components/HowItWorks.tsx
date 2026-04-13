@@ -29,21 +29,21 @@ export default function HowItWorks() {
   return (
     <section
       id="how-it-works"
-      className="py-24 sm:py-32 px-4 sm:px-6 lg:px-8 bg-gray-50"
+      className="py-24 sm:py-32 px-4 sm:px-6 lg:px-8 bg-[#fff0f3]"
       aria-labelledby="hiw-heading"
     >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <p className="text-sm font-medium text-gray-500 uppercase tracking-widest mb-3">
+          <p className="text-sm font-medium text-[#c084a0] uppercase tracking-widest mb-3">
             How It Works
           </p>
           <h2
             id="hiw-heading"
-            className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900"
+            className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#4a1f38]"
           >
             From closet chaos to outfit clarity
           </h2>
-          <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="mt-4 text-lg text-[#7a4f5a] max-w-2xl mx-auto">
             Four simple steps to take full control of your wardrobe.
           </p>
         </div>
@@ -51,18 +51,17 @@ export default function HowItWorks() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {steps.map((step, i) => (
             <div key={step.number} className="relative">
-              {/* Connector line */}
               {i < steps.length - 1 && (
-                <div className="hidden lg:block absolute top-8 left-full w-full h-px bg-gray-200 -translate-x-4 z-0" />
+                <div className="hidden lg:block absolute top-8 left-full w-full h-px bg-[#ffc2cc] -translate-x-4 z-0" />
               )}
-              <div className="relative z-10 bg-white rounded-2xl p-6 border border-gray-200 hover:shadow-md transition-shadow duration-200 h-full">
-                <span className="text-4xl font-bold text-gray-100 select-none">
+              <div className="relative z-10 bg-white rounded-2xl p-6 border border-[#ffc2cc] hover:border-[#c084a0] hover:shadow-md transition-all duration-200 h-full">
+                <span className="text-4xl font-bold text-[#fce8e0] select-none">
                   {step.number}
                 </span>
-                <h3 className="text-lg font-semibold text-gray-900 mt-2 mb-2">
+                <h3 className="text-lg font-semibold text-[#4a1f38] mt-2 mb-2">
                   {step.title}
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <p className="text-[#7a4f5a] text-sm leading-relaxed">
                   {step.description}
                 </p>
               </div>
@@ -70,11 +69,10 @@ export default function HowItWorks() {
           ))}
         </div>
 
-        {/* Bottom CTA */}
         <div className="mt-16 text-center">
           <a
             href="#preview"
-            className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white bg-gray-900 rounded-lg hover:bg-gray-800 transition-colors duration-200"
+            className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white bg-[#9b5c7a] rounded-lg hover:bg-[#6b3050] transition-colors duration-200"
           >
             See it in action
           </a>
